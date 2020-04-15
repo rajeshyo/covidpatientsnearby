@@ -1,0 +1,51 @@
+import React, { Component } from 'react'
+import Home from './Home';
+import axios from 'axios'
+
+export default class Signin extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            // Users: []
+        };
+    }
+    // https://api.github.com/users
+    getUsersData() {
+        axios
+            .get(`https://api.covid19india.org/data.json`, {})
+            .then(res => {
+                const data = res.data.statewise
+                console.log(data)
+                const users = data.map((u, index) =>
+                    <div>
+                    <p>Active:{u.active}</p>
+                    <p>Confirmed:{u.confirmed}</p>
+                    <p>Recovered:{u.recovered}</p>
+                    <p>Deaths:{u.deaths}</p>
+                    </div>
+                    )
+
+                    this.setState({
+                        users
+                    })
+
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+    }
+    componentDidMount(){
+        this.getUsersData()
+    }
+    render() {
+
+        return (
+            <div>
+                <Home />
+                {this.state.users}
+            </div>
+        )
+    }
+}
