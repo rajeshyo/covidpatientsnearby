@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9056f8f3168ab5d11123509fa8abd6e0",
+    "revision": "fe7a96d50c428efaae13baddaa2966c2",
     "url": "/covidpatientsnearby/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/covidpatientsnearby/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "738b7f9a4e80c288f15d",
+    "revision": "af0d97f1deff37475627",
     "url": "/covidpatientsnearby/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/covidpatientsnearby/static/js/2.19234a5e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "738b7f9a4e80c288f15d",
-    "url": "/covidpatientsnearby/static/js/main.583f733f.chunk.js"
+    "revision": "af0d97f1deff37475627",
+    "url": "/covidpatientsnearby/static/js/main.fb2dc583.chunk.js"
   },
   {
     "revision": "706bb612960c2871a352",
